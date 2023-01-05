@@ -35,33 +35,7 @@ class _homeState extends State<home> {
     "🇨🇳",
     "🇨🇦",
   ];
-  List capital = [
-    "Delhi",
-    "Washington, D.C.",
-    "Kabul",
-    "London",
-    "Berlin",
-    "Paris",
-    "Tokyo",
-    "Kyiv",
-    "Beijing",
-    "Ottawa",
-  ];
-  List capital_index = [
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-  ];
-  List navigator = [
-    "'first'"
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -77,11 +51,15 @@ class _homeState extends State<home> {
                   .entries
                   .map((e) => InkWell(
                 onTap: (){
-                  if(Name[e.key]==9)
+                  if(e.key==0)
                     {
                       Navigator.pushNamed(context, 'first');
                     }
-                  else if(Name[e.key]==1)
+                  else if(e.key==1 )
+                    {
+                      Navigator.pushNamed(context, 'seco');
+                    }
+                  else if(e.key==2)
                     {
                       Navigator.pushNamed(context, 'seco');
                     }

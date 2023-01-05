@@ -14,6 +14,11 @@ class _s1State extends State<s1> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(),
+        body: Container(
+          height: 300,
+          width: 300,
+          color: Colors.red,
+        ),
       ),
     );
   }
